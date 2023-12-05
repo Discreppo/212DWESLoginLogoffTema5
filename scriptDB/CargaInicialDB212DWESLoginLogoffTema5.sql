@@ -1,5 +1,5 @@
 -- Author: Oscar Pascual Ferrero
--- Created: 22 11 2023
+-- Created: 28 11 2023
 
 -- Inserto los datos iniciales en la tabla T01_Usuario con contraseñas cifradas en SHA-256
 INSERT INTO T01_Usuario (T01_CodUsuario, T01_Password, T01_DescUsuario, T01_Perfil) VALUES
