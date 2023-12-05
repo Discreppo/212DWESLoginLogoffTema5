@@ -4,7 +4,7 @@
  */
 
 -- Eliminar el usuario (si existe)
-DROP USER IF EXISTS 'user212DWESProyectoTema5'@'%';
+DROP USER IF EXISTS 'user212DWESLoginLogoffTema5'@'%';
 
 -- Eliminar la base de datos (si existe)
-DROP DATABASE IF EXISTS DB212DWESProyectoTema5;
+DROP DATABASE IF EXISTS DB212DWESLoginLogoffTema5;

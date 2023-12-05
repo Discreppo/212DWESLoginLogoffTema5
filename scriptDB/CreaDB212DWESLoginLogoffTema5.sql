@@ -1,11 +1,11 @@
 -- Author: Oscar Pascual Ferrero
--- Created: 22 11 2023
+-- Created: 28 11 2023
 
 -- Crear la base de datos
-CREATE DATABASE DB212DWESProyectoTema5;
+CREATE DATABASE DB212DWESLoginLogoffTema5;
 
 -- Nos conectamos en la BBDD
-USE DB212DWESProyectoTema5;
+USE DB212DWESLoginLogoffTema5;
 
 --Crear la tabla T01_Usuario
 CREATE TABLE T01_Usuario (
@@ -29,16 +29,10 @@ CREATE TABLE T02_Departamento (
 )ENGINE=INNODB;
 
 --Creación del usuario de la base de datos
-CREATE USER 'user212DWESProyectoTema5'@'%' IDENTIFIED BY 'paso';
+CREATE USER 'user212DWESLoginLogoffTema5'@'%' IDENTIFIED BY 'paso';
 
 --Otorgar permisos al usuario para acceder a la base de datos
-GRANT ALL PRIVILEGES ON DB212DWESProyectoTema5.* TO 'user212DWESProyectoTema5'@'%';
-
---Creación del usuario de la base de datos para el usuario de explotación
-CREATE USER 'user1&1DAW212'@'%' IDENTIFIED BY 'paso';
-
---Otorgar permisos al usuario de explotación para acceder a la base de datos
-GRANT ALL PRIVILEGES ON DB212DWESProyectoTema5.* TO 'user1&1DAW212'@'%';
+GRANT ALL PRIVILEGES ON DB212DWESLoginLogoffTema5.* TO 'user212DWESLoginLogoffTema5'@'%';
                         
 
 -- Recargar los privilegios
