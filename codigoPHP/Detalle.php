@@ -1,6 +1,18 @@
 <?php
 // Se renauda la sesion existente
 session_start();
+if (!isset($_SESSION['user212DWESLoginLogoffTema5'])) { // Si el usuario no se ha autentificado
+    header('Location: login.php'); //Redirigimos a el usuario al login
+    exit();
+}
+// Se valida si el usuario hace click en el botón 'Cerrar Sesion' 
+if (isset($_REQUEST['volver'])) {    
+    // Se redirige al usuario al Programa
+    header('Location: Programa.php');
+    // Termina el detalle
+    exit();
+}
+require_once '../config/configIdiomas.php'; // Incluimos el arrays con los mensajes según el idioma seleccionado
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -13,6 +25,12 @@ session_start();
     </head>
     <body>
         <main>
+            <div class="ejercicio">
+                <!-- Se crea un formulario tipo post para agregar la opcion de busqueda-->
+                <form name= "programa" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="form1" method="post">                    
+                    <input type="submit" form="form1" value="volver" name="volver" class="botonPrograma">hola
+                </form>
+            </div> 
             <?php
             // $_SESSION
             echo('<div class="ejercicio">');
