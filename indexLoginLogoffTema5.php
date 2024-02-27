@@ -20,7 +20,7 @@ if (isset($_REQUEST['botonIdioma'])) { // Comprobamos si el usuario a pulsado al
     header('Location: indexLoginLogoffTema5.php'); // Recargamos la página con el nuevo idioma
     exit();
 }
-require_once './config/configIdiomas.php'; // Incluimos el arrays con los mensajes según el idioma seleccionado
+require_once 'config/configIdiomas.php'; // Incluimos el arrays con los mensajes según el idioma seleccionado
 ?>
 <!DOCTYPE html>
 <html lang="es">
